@@ -1,6 +1,6 @@
 # black_scholes_model_options
 
-ChatGPT
+
 README
 
 Overview:
