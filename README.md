@@ -25,6 +25,17 @@ Power options are another type of exotic option where the payoff depends on a po
 These options are less common but can be used to tailor the risk-return profile of options to specific preferences or market conditions.
 By adjusting the power parameter, traders can create option contracts with nonlinear payoff structures, potentially offering higher potential returns or risk mitigation under certain scenarios.
 
+## Plotting:
+
+The script generates a 2x2 subplot figure displaying the following comparisons:
+
+- European Call Option vs. Monte Carlo Option: This subplot compares the prices of European call options computed using the Black-Scholes formula and Monte Carlo simulation over a range of strike prices. It provides insight into the accuracy of the Monte Carlo simulation compared to the Black-Scholes model.
+- Digital Options: This subplot compares the prices of digital call and put options over a range of strike prices. Digital options have a binary payoff at expiration, either a fixed amount if the option is in the money or nothing if it's out of the money.
+- Power Option: This subplot displays the price of a power option plotted against different strike prices. Power options are a type of exotic option where the payoff depends on a power parameter, offering flexibility in the payoff structure.
+Each subplot includes appropriate labels, titles, legends, and gridlines for clarity.
+
+![image](https://github.com/agadkarvaasugit/black_scholes_model_options/assets/156245000/1a33e64f-4d2c-498d-bda3-ac00a1793674)
+
 
 ## Dependencies
 - Python 3.x
@@ -62,14 +73,6 @@ Output:
 
 The script prints the prices of each type of option calculated using the respective functions.
 
-## Plotting:
-
-The script generates a 2x2 subplot figure displaying the following comparisons:
-
-- European Call Option vs. Monte Carlo Option: This subplot compares the prices of European call options computed using the Black-Scholes formula and Monte Carlo simulation over a range of strike prices. It provides insight into the accuracy of the Monte Carlo simulation compared to the Black-Scholes model.
-- Digital Options: This subplot compares the prices of digital call and put options over a range of strike prices. Digital options have a binary payoff at expiration, either a fixed amount if the option is in the money or nothing if it's out of the money.
-- Power Option: This subplot displays the price of a power option plotted against different strike prices. Power options are a type of exotic option where the payoff depends on a power parameter, offering flexibility in the payoff structure.
-Each subplot includes appropriate labels, titles, legends, and gridlines for clarity.
 
 
 
